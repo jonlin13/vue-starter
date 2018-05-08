@@ -27,10 +27,10 @@ var build_options = () => {
       console.log('Building a fresh distribution for production...')
       buildValue = 'PRODUCTION'
 
-    } else if (argv.build === 'STAGE') {
+    } else if (argv.build === 'STAGING') {
 
-      console.log('Building a fresh distribution for stage...')
-      buildValue = 'STAGE'
+      console.log('Building a fresh distribution for staging...')
+      buildValue = 'STAGING'
 
     } else {
       console.log('Apologies, that option is not available.')

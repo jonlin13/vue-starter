@@ -14,8 +14,8 @@ let BundleTracker = require('webpack-bundle-tracker')
 var envOptions = require('./build-options')
 
 var env
-if (envOptions.build_options() === 'STAGE') {
-  env = config.stage.env
+if (envOptions.build_options() === 'STAGING') {
+  env = config.staging.env
 } else if (envOptions.build_options() === 'PRODUCTION') {
   env = config.build.env
 } else {

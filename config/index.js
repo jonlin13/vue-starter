@@ -44,8 +44,8 @@ module.exports = {
     cssSourceMap: true
   },
 
-  stage: {
-    env: require('./stage.env'),
+  staging: {
+    env: require('./staging.env'),
   },
 
   build: {

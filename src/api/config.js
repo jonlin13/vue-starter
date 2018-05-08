@@ -2,7 +2,7 @@ var Config = require('./../../config')
 var apiConfig = (vm) => {
   vm.api = {
     dev: Config.dev.env.API_ROOT,
-    stage: Config.stage.env.API_ROOT,
+    staging: Config.staging.env.API_ROOT,
     prod: Config.build.env.API_ROOT
   }
 
@@ -12,8 +12,8 @@ var apiConfig = (vm) => {
     API_BASE_URL = vm.api.dev
   }
 
-  if (process.env.NODE_ENV === 'stage') {
-    API_BASE_URL = vm.api.stage
+  if (process.env.NODE_ENV === 'staging') {
+    API_BASE_URL = vm.api.staging
   }
 
   if (process.env.NODE_ENV === 'production') {

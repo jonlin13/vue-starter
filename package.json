@@ -1,7 +1,7 @@
 {
-  "name": "ghostrider-client",
-  "version": "1.0.0",
-  "description": "A singlepace application to consume the ghostrider production queue API",
+  "name": "vue-starter",
+  "version": "0.0.1",
+  "description": "A Vue-starter boilerplate with web-application-driven resources and back-end-ready configuration",
   "author": "Jon Linton <jon@studio-424.com>",
   "private": true,
   "scripts": {
@@ -11,7 +11,7 @@
     "test": "npm run unit",
     "lint": "eslint --ext .js,.vue src test/unit",
     "build": "node build/build.js",
-    "buildStage": "node build/build.js whatBuild --build=STAGE"
+    "buildStaging": "node build/build.js whatBuild --build=STAGING"
   },
   "dependencies": {
     "bootstrap-vue": "^2.0.0-rc.9",
