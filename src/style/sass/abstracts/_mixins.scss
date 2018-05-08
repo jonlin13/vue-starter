@@ -1,0 +1,46 @@
+@mixin type_book {
+  font-family: "circular-book", "Helvetica", Arial, sans-serif;
+  font-style: normal;
+}
+
+@mixin type_medium {
+  font-family: "circular-medium", "Helvetica", Arial, sans-serif;
+  font-style: normal;
+}
+
+@mixin type_bold {
+  font-family: "circular-bold", "Helvetica", Arial, sans-serif;
+  font-style: normal;
+}
+
+@mixin type_black {
+  font-family: "circular-black", "Helvetica", Arial, sans-serif;
+  font-style: normal;
+}
+
+//REM font sizing with PX fallback for IE 8 <
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+@mixin line-height($sizeValue: 1.6) {
+  line-height: ($sizeValue * 10) + px;
+  line-height: $sizeValue + rem;
+}
+
+@mixin respond-to($name) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $name) {
+    // Prints a media query based on the value
+    @media #{inspect(map-get($breakpoints, $name))} {
+      @content;
+    }
+  }
+
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+  }
+}

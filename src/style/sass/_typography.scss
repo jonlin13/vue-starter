@@ -1,0 +1,75 @@
+:root{ font-size:16px; }
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @include font-size($font_size_p);
+  @include type_book;
+  color: $c_p;
+}
+
+p{
+  @include font-size($font_size_p);
+  @include line-height($line_height_p);
+  @include type_book;
+  color: $c_p;
+}
+// PAGE HEADER
+h1{
+ @include font-size($font_size_h1);
+ @include line-height($line_height_h1);
+ @include type_black;
+ color: $c_h1;
+}
+// PAGE SECTION HEADER
+h2{
+ @include font-size($font_size_h2);
+ @include line-height($line_height_h2);
+ @include type_bold;
+ color: $c_h2;
+}
+// SUB HEADER TO H1
+h3{
+ @include font-size($font_size_h3);
+ @include line-height($line_height_h3);
+ @include type_medium;
+ color: $c_h3;
+}
+// META FIELD LABEL
+h4{
+ @include font-size($font_size_h4);
+ @include line-height($line_height_h4);
+ @include type_medium
+ text-transform: uppercase;
+ color: $c_h4;
+}
+// GLOBAL NAV ITEM
+h5{
+ @include font-size($font_size_h5);
+ @include line-height($line_height_h5);
+ @include type_medium;
+ color: $c_h5;
+}
+// SECTIONAL NAV ITEM
+h6{
+ @include font-size($font_size_h6);
+ @include line-height($line_height_h6);
+ @include type_bold;
+ color: $c_h6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0rem;
+}
+
+a {
+  color: $c_pure_blue;
+  &:hover{
+    color: $c_pure_blue;
+  }
+}

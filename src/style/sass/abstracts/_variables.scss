@@ -1,0 +1,50 @@
+// ---> HEADER KEY:
+// h1 - page section header, beneath h1
+// h2 - page section header
+// h3 - sub h1 header
+// h4 - meta field label
+// h5 - global nav item
+// h6 - sectional nav item
+
+// COLORS:
+// type:
+$c_p: #211B50;
+$c_h1: #211B50;
+$c_h2: #211B50;
+$c_h3: #AAAABA;
+$c_h4: #BEBEC7;
+$c_h5: #8782C3;
+$c_h6: #8782C3;
+// layout elements / backgrounds:
+$c_global_nav: #211B50;
+$c_container: #F5F5F8;
+$c_sectional_nav: #FFFFFF;
+// by color for general use:
+$c_dark_blue: #211B50;
+$c_pure_blue: #3219F5;
+
+// BASE TYPE SIZES:
+$font_size_p: 1.3125;
+$font_size_h1: 2.3125;
+$font_size_h2: 1.375;
+$font_size_h3: 1.3125;
+$font_size_h4: 1;
+$font_size_h5: 1.25;
+$font_size_h6: 1.25;
+
+// BASE LINE HEIGHTS:
+$line_height_p: 1.625;
+$line_height_h1: 2.9375;
+$line_height_h2: 1.75;
+$line_height_h3: 1.625;
+$line_height_h4: 1.6875;
+$line_height_h5: 1.5625;
+$line_height_h6: 1.5625;
+
+// RESPONSIVE BREAKPOINTS:
+$breakpoints: (
+  'small'  : ( max-width:  576px ),
+  'medium' : ( max-width:  768px ),
+  'large'  : ( max-width: 992px ),
+  'xlarge'  : ( min-width: 1200px )
+);
