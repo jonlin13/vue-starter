@@ -1,27 +1,5 @@
-# ghostrider-client
+# vue-starter
+A customized version of vue-webpack that includes style scaffolding + scss global loading, api methods + config, application utilities, scaffolding, build scripts, and bundle tracker for integration with backends (e.g. Django).
 
-> A singlepace application to consume the ghostrider production queue API
+More indepth readme coming soon...
 
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run all tests
-npm test
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
